@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "cascadiacode:size=11", "Font Awesome 5 Brands:size=10", "Font Awesome 5 Free Solid:size=10" };
-static const char dmenufont[]       = "cascadiacode:size=11";
+static const char *fonts[]          = { "cascadiacode:size=12", "Font Awesome 5 Brands:size=14", "Font Awesome 5 Free Solid:size=14" };
+static const char dmenufont[]       = "cascadiacode:size=12";
 // background color
 static const char col_gray1[]       = "#000000";
 // inactive window color
@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -33,8 +33,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     			NULL,       NULL,       0,            1,           -1 },
-	{ "firefox",  			NULL,       NULL,       1 << 4,       0,           -1 },
+	// { "Gimp",     			NULL,       NULL,       0,            1,           -1 },
+	// { "firefox",  			NULL,       NULL,       1 << 4,       0,           -1 },
+	{ "xdman-Main", 		NULL,       NULL,       0,       	  1,           -1 },
+	{ "qemu-system-x86", 	NULL,       NULL,       0,       	  1,           -1 },
+	{ "jetbrains-studio", 	NULL,       NULL,       0,       	  1,           -1 },
 	{ "Pcmanfm", 			NULL,       NULL,       1 << 5,       0,           -1 },
 	{ "vlc",  				NULL,       NULL,       1 << 6,       0,           -1 },
 	{ "TelegramDesktop",  	NULL,       NULL,       1 << 7,       0,           -1 },
